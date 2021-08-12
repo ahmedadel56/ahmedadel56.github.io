@@ -20,7 +20,13 @@ header {
   text-align: center;
 }
 
-header a {
+nav {
+  width: 100%;
+  display: inherit;
+  flex: 1 1 1;
+}
+
+header nav a {
   display: flex;
   color: white;
   text-decoration: none;
@@ -28,7 +34,7 @@ header a {
   width: 50%;
 }
 
-header .icon {
+header nav .icon {
   justify-content: flex-end;
 }
 
