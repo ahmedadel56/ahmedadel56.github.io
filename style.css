@@ -10,11 +10,13 @@
 
 body {
   height: 100vh;
+  width: 100%;
 }
 
 header {
+  height: 10vh;
+  min-width: 100%;
   background-color: #3c3a39;
-  height: 6vh;
   display: flex;
   align-items: center;
   text-align: center;
@@ -22,6 +24,8 @@ header {
 
 nav {
   width: 100%;
+  margin: 20px;
+  padding: 10px;
   display: inherit;
   flex: 1 1 1;
 }
@@ -30,7 +34,7 @@ header nav a {
   display: flex;
   color: white;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 28px;
   width: 50%;
 }
 
@@ -40,15 +44,15 @@ header nav .icon {
 
 main {
   display: flex;
+  padding: 20px;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  min-height: 94vh;
+  min-height: 86vh;
   background-color: #1c1a19;
 }
 
 main .text-content {
-  margin: 20px;
+  margin:30px 20px 0 30px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -65,7 +69,6 @@ main .text-content {
 }
 
 .text-content h2 {
-  margin-bottom: 18px;
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
@@ -73,16 +76,36 @@ main .text-content {
 }
 
 .text-content p {
+  margin-top: 20px;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  margin-bottom: 5px;
 }
 
-[alt="elepse-shape"] {
+.icons{
+  margin-top: 20px;
+}
+
+ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 3px;
+}
+
+ul li a{
+  text-decoration: none;
+}
+
+li:nth-child(2) {
+  position: relative;
+  top: -19px;;
+  left: 13px;
+}
+.side-img{
   position: absolute;
-  width: 200px;
-  height: 500px;
-  right: 0;
-  bottom: 50px;
+  right: 5px;
+  top: 221px;
+  width: 150px;
+  height: 400px;
+  background-image: url(./images/Illustration.png);
 }
