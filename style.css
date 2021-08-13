@@ -27,7 +27,7 @@ nav {
   margin: 20px;
   padding: 10px;
   display: inherit;
-  flex: 1 1 1;
+  flex: 1 1;
 }
 
 header nav a {
@@ -52,7 +52,7 @@ main {
 }
 
 main .text-content {
-  margin:30px 20px 0 30px;
+  margin: 30px 20px 0 30px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -82,7 +82,7 @@ main .text-content {
   color: #fff;
 }
 
-.icons{
+.icons {
   margin-top: 20px;
 }
 
@@ -92,16 +92,17 @@ ul li {
   margin: 3px;
 }
 
-ul li a{
+ul li a {
   text-decoration: none;
 }
 
 li:nth-child(2) {
   position: relative;
-  top: -19px;;
+  top: -19px;
   left: 13px;
 }
-.side-img{
+
+.side-img {
   position: absolute;
   right: 5px;
   top: 221px;
