@@ -304,6 +304,16 @@ ul li a {
   border: #ff6b00;
 }
 
+button:hover {
+  background-color: #FFF5E1;
+  color: #F55800;
+}
+
+button:active {
+  background-color: #E05304;
+  color: #F4F1F0;
+}
+
 .about-me .line-break {
   width: 70%;
   height: 1px;
