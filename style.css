@@ -50,7 +50,7 @@ main {
   min-height: 86vh;
   background-color: #1c1a19;
   background-image: url(./images/Illustration.png);
-  background-position: 100% 130%;
+  background-position: 100% 120%;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -198,7 +198,6 @@ ul li a {
 .card-work,
 .card-work1 {
   width: 100%;
-  margin: auto;
 }
 
 .card-work1 img {
@@ -315,7 +314,7 @@ ul li a {
 }
 
 button:hover {
-  background-color: #33312e;
+  background-color: #fff5e1;
   color: #f55800;
 }
 
