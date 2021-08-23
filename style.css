@@ -109,9 +109,7 @@ ul li a {
 }
 
 .card-works ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  float: left;
   width: fit-content;
   padding: 14px;
   margin: 0 3px 10px 14px;
@@ -123,6 +121,7 @@ ul li a {
 }
 
 .card-work1 ul li {
+  float: left;
   color: #091e42;
   outline: 1px solid #091e42;
 }
