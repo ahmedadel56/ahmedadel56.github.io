@@ -42,7 +42,7 @@ header nav .icon {
 /* main section */
 
 main {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   padding: 20px;
   flex-direction: column;
@@ -112,7 +112,7 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:fit-content;
+  width: fit-content;
   padding: 14px;
   margin: 0 3px 10px 14px;
   background: rgba(255, 255, 255, 0.24);
@@ -186,8 +186,6 @@ ul li a {
 }
 
 .card-work {
-  width: 95%;
-  margin: auto;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -196,9 +194,11 @@ ul li a {
   background-size: cover;
   overflow: hidden;
 }
-.card-work,.card-work1{
-  width: 100%;
-  margin: 40x;
+
+.card-work,
+.card-work1 {
+  min-width: 100%;
+  margin: auto;
 }
 
 .card-work1 img {
@@ -231,7 +231,7 @@ ul li a {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin:0 0 10px 20px  ;
+  margin: 0 0 10px 20px;
 }
 
 .card-work1 p {
@@ -285,7 +285,6 @@ ul li a {
   overflow: hidden;
 }
 
-
 .about-me .title h2 {
   font-family: 'Crete Round', serif;
   font-size: 45px;
@@ -316,14 +315,13 @@ ul li a {
 }
 
 button:hover {
-  background-color: #FFF5E1;
-  color: #F55800;
+  background-color: #fff5e1;
+  color: #f55800;
 }
 
 button:active {
-  background-color: #E05304;
-  color: #F4F1F0
-  ;
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 .about-me .line-break {
