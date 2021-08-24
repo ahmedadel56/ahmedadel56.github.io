@@ -27,11 +27,19 @@ nav {
   flex: 1 1;
 }
 
+a {
+  text-decoration: none;
+  margin: 10px;
+}
+
 header nav a {
   display: flex;
   color: white;
   text-decoration: none;
-  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
   width: 50%;
 }
 
@@ -72,6 +80,18 @@ main .text-content {
   color: #ff6b00;
 }
 
+footer h2 {
+  width: 327px;
+  height: 216px;
+  margin: 40px auto;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
 .text-content h2 {
   font-weight: bold;
   font-size: 24px;
@@ -90,14 +110,15 @@ main .text-content {
   margin-top: 20px;
 }
 
+.icons a {
+  color: #dbd8d7;
+  font-size: 25px;
+}
+
 ul li {
   display: inline-block;
   list-style-type: none;
   margin: 3px;
-}
-
-ul li a {
-  text-decoration: none;
 }
 
 .child li {
@@ -118,10 +139,12 @@ ul li a {
   font-weight: 500;
   font-size: 15px;
   color: #fff;
+  align-self: center;
 }
 
 .card-work1 ul li {
   float: left;
+  align-self: center;
   color: #091e42;
   outline: 1px solid #091e42;
 }
@@ -248,6 +271,16 @@ ul li a {
   display: flex;
 }
 
+form button {
+  width: 131px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #ff6b00;
+}
+
 .card-works button {
   height: 48px;
   background-color: #ff6b00;
@@ -302,8 +335,8 @@ ul li a {
 }
 
 .about-me button {
-  width: 40%;
-  height: 55px;
+  width: 161px;
+  height: 48px;
   background-color: #ff6b00;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
@@ -328,6 +361,10 @@ button:active {
   height: 1px;
   margin: auto;
   background-color: #fff;
+}
+
+.tech {
+  margin: 100px auto;
 }
 
 .father {
@@ -362,4 +399,80 @@ button:active {
   align-items: center;
   text-align: center;
   color: #fff;
+}
+
+/* footer section */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  margin-top: 15vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 95vh;
+  margin-top: 13vh;
+}
+
+form * {
+  margin: 20px auto;
+  padding: 10px;
+  width: 95%;
+  border: none;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+form input {
+  height: 25px;
+  border-bottom: 1px solid #dbd8d7;
+  color: #979493;
+}
+
+form textarea {
+  height: 114px;
+  width: 90%;
+  background: #fbf8f7;
+  color: #3c3a39;
+}
+
+.seprate {
+  width: 100%;
+  height: 1px;
+  background: #dfe1e6;
+  border: none;
+}
+
+.bottom-icons {
+  height: 10vh;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bottom-icons a {
+  font-size: 25px;
+  color: #505f79;
+}
+
+.seprate2 {
+  width: 30%;
+  height: 5px;
+  margin-bottom: 8px;
+  background: #0d151e;
+  border-radius: 10px;
 }
