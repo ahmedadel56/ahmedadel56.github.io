@@ -36,7 +36,10 @@ header nav a {
   display: flex;
   color: white;
   text-decoration: none;
-  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
   width: 50%;
 }
 
@@ -136,10 +139,12 @@ ul li {
   font-weight: 500;
   font-size: 15px;
   color: #fff;
+  align-self: center;
 }
 
 .card-work1 ul li {
   float: left;
+  align-self: center;
   color: #091e42;
   outline: 1px solid #091e42;
 }
@@ -330,8 +335,8 @@ form button {
 }
 
 .about-me button {
-  width: 40%;
-  height: 55px;
+  width: 161px;
+  height: 48px;
   background-color: #ff6b00;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
