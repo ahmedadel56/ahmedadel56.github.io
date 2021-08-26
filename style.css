@@ -323,11 +323,14 @@ form button {
 }
 
 .about-me .title h2 {
-  font-family: 'Crete Round', serif;
-  font-size: 45px;
-  line-height: 88px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 72px;
+  line-height: 81px;
+  color: #F55800;  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
 }
 
 .about-me p {
@@ -378,10 +381,17 @@ button:active {
   margin-top: 20px;
 }
 
-.father .head {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.father .sub-head {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 228px;
+height: 24px;
+font-family: 'Inter',serif;
+font-weight: bold;
+font-size: 32px;
+line-height: 44px;
+color: #FFFFFF;
 }
 
 .father .child {
@@ -391,20 +401,7 @@ button:active {
   justify-content: center;
 }
 
-.head img {
-  margin-right: 15px;
-}
 
-.head span {
-  font-family: 'Inter', sans-serif;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
 
 /* footer section */
 
@@ -687,4 +684,93 @@ margin: 24px 0px;
 .card-work:hover button{
   display: block;
 }
+/* about me section */
+
+  .about-me {
+    background-image: url(./images/Group-2.png);
+    background-size: 50%;
+    background-position: 100% 9%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me .me-content {
+    background-image: none;
+    margin: 5%;
+    width: 33%;
+  }
+
+  .about-me .line-break {
+    width: 86%;
+    border: 1px solid #FFFFFF;
+  }
+
+  .tech {
+    width: 100%;
+  }
+  .tech .ul-contain {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+  }
+  .ul-contain .father {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub-head  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .sub-head img {
+    flex: 1 1 10%;
+    width: 22px;
+    height: 18px;  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 12px;
+  }
+  .sub-head span {
+    flex: 1 1 40%;
+  }
+
+  .father .child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .contact-info {
+    width: 90%;
+    margin: 10% auto 0 2%;
+    display: flex;
+  }
+  .contact-info h2 {
+    width: 455px;
+    height: 256px;
+    flex: 2 1;
+    font-family: 'Inter',sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 30px;
+  }
+  .contact-info form {
+    flex: 1 1;
+    margin: 0;
+  }
+  form textarea {
+    width: 95%;
+  }
+  form button {
+    margin: 10px auto auto 10px;
+  }
 }
