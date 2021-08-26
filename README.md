@@ -8,13 +8,6 @@
 ![image](https://user-images.githubusercontent.com/43178495/130681365-6f0d08a1-7791-478b-b981-ec91a0fdc333.png)
 ![image](https://user-images.githubusercontent.com/43178495/130681453-2fa46908-832d-4d2f-90de-a3d394fec729.png)
 
-# Portfolop-Desktop-Version
-![image](https://user-images.githubusercontent.com/43178495/131028061-36628d3c-b621-4d83-bffa-9a87cd1da7aa.png)
-![image](https://user-images.githubusercontent.com/43178495/131028128-21986818-96c5-4a9c-b1a5-2e42e14a7cc7.png)
-![image](https://user-images.githubusercontent.com/43178495/131028220-e1c74cd0-be35-4fbe-b87d-ddbc09154a10.png)
-![image](https://user-images.githubusercontent.com/43178495/131028277-624d61c6-c2ce-4822-a5e6-314b53a22bd0.png)
-![image](https://user-images.githubusercontent.com/43178495/131028374-5897367b-0041-4eef-915c-47519390ce88.png)
-
 prepare portfolio website
 # Additional description about the project and its features.
 
