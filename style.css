@@ -216,7 +216,7 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%),url(./images/Img\ Placeholder\ 2.png);
+  background: url(./images/Img-Placeholder-2.png);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -661,4 +661,30 @@ flex-grow: 0;
 margin: 24px 0px;
 }
 
+.card-work:nth-child(3),.card-work:nth-child(6){
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(./images/Img-Placeholder.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-work:nth-child(4),.card-work:nth-child(7) {
+  background: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%), url(./images/Img-Placeholder1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-work button {
+  display: none;
+}
+.card-work:hover{
+  background-image: url(./images/Placeholder-block.png) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-work:hover *{
+  display: none;
+}
+
+.card-work:hover button{
+  display: block;
+}
 }
