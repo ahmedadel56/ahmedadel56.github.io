@@ -299,6 +299,7 @@ form button {
   width: 140px;
   height: 55px;
   margin: 10px auto auto 10px;
+  background-color: #ff6b00;
 }
 
 /* about me section */
@@ -319,13 +320,13 @@ form button {
   background-image: url(./images/Group.png);
   background-repeat: no-repeat;
   background-position: 100% 100%;
-  overflow: hidden;
+
 }
 
 .about-me .title h2 {
   font-family: 'Crete Round', sans-serif;
   font-size: 72px;
-  line-height: 81px;
+  line-height: 88px;
   color: #f55800;
   flex: none;
   order: 0;
@@ -334,12 +335,12 @@ form button {
 }
 
 .about-me p {
-  width: 90%;
-  height: 30vh;
-  font-family: 'Inter', sans-serif;
+  width: 327px;
+  height: 148px;
+  font-family: 'Inter',sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #f4f5f7;
+  color: #F4F5F7;
 }
 
 .about-me button {
@@ -724,6 +725,15 @@ form textarea {
   .about-me .line-break {
     width: 86%;
     border: 1px solid #fff;
+  }
+
+  .me-content P {
+    width: 566px;
+    height: 148px;
+    font-family: 'Inter',sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+
   }
 
   .tech {
