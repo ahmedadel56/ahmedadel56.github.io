@@ -523,14 +523,23 @@ form textarea {
   /* main section */
   main {
     background-image: url(./images/main2bac.png);
-    background-position: 100% 70%;
     background-size: 42%;
+    animation: back-g 3s;
     background-repeat: no-repeat;
     overflow: hidden;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
+  }
+
+  @keyframes back-g {
+    from {
+      background-position: bottom left;
+    }
+    to {
+      background-position: 100% 70%;
+    }
   }
 
   main .text-content {
@@ -709,11 +718,21 @@ form textarea {
 
   .about-me {
     background-image: url(./images/Group-2.png);
-    background-size: 50%;
     background-position: 100% 9%;
+    background-size: 50%;
+    animation: backg2 3s none 3s ;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+  }
+
+  @keyframes backg2 {
+    from {
+      background-position: bottom left;
+    }
+    to {
+      background-position: 100% 9%;
+    }
   }
 
   .about-me .me-content {
@@ -734,6 +753,16 @@ form textarea {
     font-size: 20px;
     line-height: 32px;
 
+  }
+  .me-content button, .card-work1 button, form button {
+    transition: transform 3s;
+    
+  }
+
+  .me-content button:hover,
+  .card-work1 button:hover,
+  form button:hover {
+    transform: scale(1.2,1.2);
   }
 
   .tech {
