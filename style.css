@@ -320,7 +320,6 @@ form button {
   background-image: url(./images/Group.png);
   background-repeat: no-repeat;
   background-position: 100% 100%;
-
 }
 
 .about-me .title h2 {
@@ -337,10 +336,10 @@ form button {
 .about-me p {
   width: 327px;
   height: 148px;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
 }
 
 .about-me button {
@@ -537,6 +536,7 @@ form textarea {
     from {
       background-position: bottom left;
     }
+
     to {
       background-position: 100% 70%;
     }
@@ -665,12 +665,18 @@ form textarea {
     width: 100%;
   }
 
-  .img-info ul li {
-    margin: 10px 15px 10px 0;
-  }
-
   form button {
     margin: 10px auto auto 10px;
+  }
+
+  form button,
+  .me-content button,
+  .card-work1 button {
+    transition: transform 3s;
+  }
+
+  .img-info ul li {
+    margin: 10px 15px 10px 0;
   }
 
   .img-info button {
@@ -700,6 +706,12 @@ form textarea {
     display: none;
   }
 
+  form button:hover,
+  .me-content button:hover,
+  .card-work1 button:hover {
+    transform: scale(1.2, 1.2);
+  }
+
   .card-work:hover {
     background-image: url(./images/Placeholder-block.png);
     background-size: cover;
@@ -720,7 +732,7 @@ form textarea {
     background-image: url(./images/Group-2.png);
     background-position: 100% 9%;
     background-size: 50%;
-    animation: backg2 3s none 3s ;
+    animation: backg2 3s none 3s;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -730,6 +742,7 @@ form textarea {
     from {
       background-position: bottom left;
     }
+
     to {
       background-position: 100% 9%;
     }
@@ -746,23 +759,12 @@ form textarea {
     border: 1px solid #fff;
   }
 
-  .me-content P {
+  .me-content p {
     width: 566px;
     height: 148px;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 32px;
-
-  }
-  .me-content button, .card-work1 button, form button {
-    transition: transform 3s;
-    
-  }
-
-  .me-content button:hover,
-  .card-work1 button:hover,
-  form button:hover {
-    transform: scale(1.2,1.2);
   }
 
   .tech {
@@ -776,15 +778,17 @@ form textarea {
     grid-template-columns: auto auto auto;
   }
 
+  .father {
+    align-items: center;
+  }
+
   .ul-contain .father {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
 
   .sub-head {
-
     margin-left: 117px;
   }
 
@@ -795,27 +799,23 @@ form textarea {
     order: 0;
     flex-grow: 0;
     margin: 0 12px;
-    
   }
 
   .sub-head span {
     width: 228px;
     height: 24px;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 32px;
     line-height: 44px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #fff;
     flex: none;
     order: 1;
     flex-grow: 0;
   }
 
-  .father {
-    align-items: center;
-  }
   .father .child {
     display: flex;
     flex-direction: column;
