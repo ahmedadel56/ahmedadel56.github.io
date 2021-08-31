@@ -87,12 +87,12 @@ main .text-content {
 footer h2 {
   width: 327px;
   height: 216px;
-  margin: 40px auto;
+  margin: 40px auto auto 30px;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  text-align: center;
+  text-align: start;
   color: #172b4d;
 }
 
@@ -320,7 +320,6 @@ form button {
   background-image: url(./images/Group.png);
   background-repeat: no-repeat;
   background-position: 100% 100%;
-
 }
 
 .about-me .title h2 {
@@ -337,10 +336,10 @@ form button {
 .about-me p {
   width: 327px;
   height: 148px;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
 }
 
 .about-me button {
@@ -523,14 +522,24 @@ form textarea {
   /* main section */
   main {
     background-image: url(./images/main2bac.png);
-    background-position: 100% 70%;
     background-size: 42%;
+    animation: back-g 3s;
     background-repeat: no-repeat;
     overflow: hidden;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
+  }
+
+  @keyframes back-g {
+    from {
+      background-position: bottom left;
+    }
+
+    to {
+      background-position: 100% 70%;
+    }
   }
 
   main .text-content {
@@ -656,12 +665,18 @@ form textarea {
     width: 100%;
   }
 
-  .img-info ul li {
-    margin: 10px 15px 10px 0;
-  }
-
   form button {
     margin: 10px auto auto 10px;
+  }
+
+  form button,
+  .me-content button,
+  .card-work1 button {
+    transition: transform 3s;
+  }
+
+  .img-info ul li {
+    margin: 10px 15px 10px 0;
   }
 
   .img-info button {
@@ -691,6 +706,12 @@ form textarea {
     display: none;
   }
 
+  form button:hover,
+  .me-content button:hover,
+  .card-work1 button:hover {
+    transform: scale(1.2, 1.2);
+  }
+
   .card-work:hover {
     background-image: url(./images/Placeholder-block.png);
     background-size: cover;
@@ -709,11 +730,22 @@ form textarea {
 
   .about-me {
     background-image: url(./images/Group-2.png);
-    background-size: 50%;
     background-position: 100% 9%;
+    background-size: 50%;
+    animation: backg2 3s none 3s;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+  }
+
+  @keyframes backg2 {
+    from {
+      background-position: bottom left;
+    }
+
+    to {
+      background-position: 100% 9%;
+    }
   }
 
   .about-me .me-content {
@@ -727,13 +759,12 @@ form textarea {
     border: 1px solid #fff;
   }
 
-  .me-content P {
+  .me-content p {
     width: 566px;
     height: 148px;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 32px;
-
   }
 
   .tech {
@@ -747,15 +778,17 @@ form textarea {
     grid-template-columns: auto auto auto;
   }
 
+  .father {
+    align-items: center;
+  }
+
   .ul-contain .father {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
 
   .sub-head {
-
     margin-left: 117px;
   }
 
@@ -766,27 +799,23 @@ form textarea {
     order: 0;
     flex-grow: 0;
     margin: 0 12px;
-    
   }
 
   .sub-head span {
     width: 228px;
     height: 24px;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 32px;
     line-height: 44px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #fff;
     flex: none;
     order: 1;
     flex-grow: 0;
   }
 
-  .father {
-    align-items: center;
-  }
   .father .child {
     display: flex;
     flex-direction: column;
