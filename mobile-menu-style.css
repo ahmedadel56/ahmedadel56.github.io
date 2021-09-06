@@ -11,16 +11,14 @@
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
-        display: block;
+        display: flex;
         font-size: 30px;
         color: white;
         width: 227px;
         height: 24px;
         top: 8px;
-        font-family: Inter;
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
+        font-size: 32px;
+        font-weight: 700;
 
         
 
