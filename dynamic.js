@@ -29,9 +29,7 @@ let div = document.createElement('div'),
 
 // adding attributes to mobile menue items
 
-ul.classList.add('anchors-list');
-link.classList.add('a');
-
+ul.className = 'anchors-list';
 
 li.appendChild(link);
 ul.appendChild(li);
