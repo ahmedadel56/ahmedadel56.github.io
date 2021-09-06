@@ -16,7 +16,7 @@ This project Is for setting Portfolio website to include all info about me and m
 * CSS
 
 # Live Demo
-* https://ahmedadel56.github.io/portfolio/
+* https://ahmedadel56.github.io/
 # Prerequisites
 Just Google Chrome
 
