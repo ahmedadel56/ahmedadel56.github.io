@@ -6,25 +6,28 @@
 let div = document.createElement('div'),
     content = document.createElement('div'),
       close_btn = document.createElement('a');
+      close_btn.innerHTML = '&times;';
     div.appendChild(close_btn);
     div.appendChild(content)
 
-let   icon = document.querySelector('#menu-icon');
+let   icon = document.querySelector('#menu-icon'),
       link = document.createElement('a');
-      link.src = 'home';
+      link.href = '#news';
       link.textContent = 'Portfolio';
+      link.className = 'nav-click';
       content.appendChild(link);
 
       link = document.createElement('a');
-      link.src = 'about-me';  
+      link.href = '#about';  
       link.textContent = 'About';
+      link.className = 'nav-click';
       content.appendChild(link)
       
       link = document.createElement('a');
-      link.src = 'contact-info';
+      link.href = '#contact-info';
       link.textContent = 'Contact';
+      link.className = 'nav-click';
       content.appendChild(link);
-
 
 // adding attributes to mobile menue items
 div.id = 'container';
@@ -37,7 +40,6 @@ document.body.appendChild(div);
 function openContainer(){
     document.getElementById("container").style.height = "100%";
 
-
 }
 
 function closecContainer (){
@@ -45,8 +47,8 @@ function closecContainer (){
 }
 
 icon.addEventListener('click', openContainer);
-close_btn.onclick = closecContainer();
-
-
-console.log(icon)
+close_btn.addEventListener('click',closecContainer);
+let nav_link = document.querySelectorAll('.nav-click');
+nav_link.forEach(a => a.addEventListener('click',closecContainer))
+console.log(nav_link)
 

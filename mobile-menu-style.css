@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 @media only screen and (max-width: 992px) {
 
     .mobile-menu{
@@ -13,14 +14,7 @@
         transition: 0.5s;   
 
     }
-    .content{
-        position: relative;
-        top: 25%;
-        width: 100%;
-        text-align: center;
-        margin-top: 30px;
-    }
-    .mobile-menu a{
+        .mobile-menu a{
         padding: 8px;
         text-decoration: none;
         font-size: 20px;
@@ -28,11 +22,33 @@
         display: block;
         transition: 0.3s;
     }
+    .content{
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align:start;
+    }
+    .content a{
+        font-family: 'Inter',sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 44px;
+        display: flex;
+        align-items: center;
+        color: #FFF5E1;
+        width: 70%;
+        margin: auto;
+        padding-left: 20px;
+        border-bottom:1px solid #6F6C6B ;
+    }
     .mobile-menu .closebtn {
         position: absolute;
         font-size: 40px;
         top: 15px;
         right: 35px;
+        height: 12px;
+        width: 12px;
+        border-radius: 0px;
     }
-
+    
 }
