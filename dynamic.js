@@ -4,44 +4,49 @@
 // creating mobile menue elements
 
 let div = document.createElement('div'),
-      ul = document.createElement('ul'),
+    content = document.createElement('div'),
+      close_btn = document.createElement('a');
+    div.appendChild(close_btn);
+    div.appendChild(content)
 
-      li = document.createElement('li'),
+let   icon = document.querySelector('#menu-icon');
       link = document.createElement('a');
       link.src = 'home';
       link.textContent = 'Portfolio';
-      li.appendChild(link)
-      ul.appendChild(li);
+      content.appendChild(link);
 
-      li = document.createElement('li');
       link = document.createElement('a');
-      li.src = 'about-me';
+      link.src = 'about-me';  
       link.textContent = 'About';
-      li.appendChild(link)
-      ul.appendChild(li);
+      content.appendChild(link)
       
-      li = document.createElement('li');
       link = document.createElement('a');
-      li.src = 'contact-info';
+      link.src = 'contact-info';
       link.textContent = 'Contact';
-
+      content.appendChild(link);
 
 
 // adding attributes to mobile menue items
-
-ul.className = 'anchors-list';
-
-li.appendChild(link);
-ul.appendChild(li);
-div.appendChild(ul);
-
-
-icon = document.querySelector('#menu-icon');
-
-icon.onclick = function (){
-    div.classList.toggle('mobile-menu')
-}
-
+div.id = 'container';
+div.className = 'mobile-menu';
+close_btn.href = 'javascript:void(0)';
+close_btn.className = 'closebtn';
+content.className = 'content'
 document.body.appendChild(div);
 
+function openContainer(){
+    document.getElementById("container").style.height = "100%";
+
+
+}
+
+function closecContainer (){
+    document.getElementById("container").style.height = '0%';
+}
+
+icon.addEventListener('click', openContainer);
+close_btn.onclick = closecContainer();
+
+
+console.log(icon)
 
