@@ -15,13 +15,14 @@
     </script>    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio Main Page</title>
+    <link rel="stylesheet" href="./mobile-menu-style.css">
+    <title>Portfolio</title>
 </head>
 <body tabindex="0">
     <header>
         <nav>
             <a href="#home" class="active">Ahmed Adel</a>
-            <a href="#home" class="icon">
+            <a href="#home" class="icon" id = "menu-icon">
                 <i class="fa fa-bars"></i>
             </a>
             <ul class="menu-desktop">
@@ -175,7 +176,7 @@
         </div>
     </section>
     <footer>
-        <section class="contact-info">
+        <section id='contact-info' class="contact-info">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             <form action="https://formspree.io/f/mzbykqrw" method="POST" id="contact">
                 <input type="text" id="name" name="user_name" placeholder="Full name" maxlength="30" required>
@@ -193,6 +194,7 @@
             <a href="https://medium.com/" class="fa fa-medium fa-lg"></a>
         </div>
         <hr class="seprate2">
-    </footer>   
+    </footer> 
+    <script src="./dynamic.js"></script>
 </body>
 </html>
