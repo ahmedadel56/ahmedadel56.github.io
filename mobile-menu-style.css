@@ -7,11 +7,21 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #fff;
+        background-color:black;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
-        display: block;
+        display: flex;
+        font-size: 30px;
+        color: white;
+        width: 227px;
+        height: 24px;
+        top: 8px;
+        font-size: 32px;
+        font-weight: 700;
+
+        
+
     }
     .anchors-list{
         min-height: 100%;
