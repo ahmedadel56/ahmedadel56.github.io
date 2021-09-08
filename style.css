@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=crete+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', sa;
   font-style: normal;
 }
 
