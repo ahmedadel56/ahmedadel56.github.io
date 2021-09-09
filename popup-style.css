@@ -5,7 +5,6 @@
   align-items: center;
   padding: 16px;
   position: fixed;
-  width: 90%;
   margin: 0 auto auto 20px;
   top: 40px;
   background: #fff;
@@ -129,6 +128,17 @@
   margin: 0 40px 0 0;
 }
 
+.demo-buttons button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.demo-buttons button:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
 .demo-buttons button img {
   width: 20px;
   height: 20px;
@@ -149,7 +159,6 @@
     border: 1px solid #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   }
-
 
   .popup-header {
     width: 1056px;

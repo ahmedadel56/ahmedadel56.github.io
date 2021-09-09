@@ -107,23 +107,23 @@ const mockData = [
     imageURL: './images/popup-img.png',
     liveURL: 'https://www.github.com',
     projectURL: 'https://www.github.com/ahmedadel56',
-  }
+  },
 ];
 
 function loadCards(cardsData = mockData) {
   cardsData.forEach((element) => {
     const card = document.createElement('div');
     card.className = 'popup';
-    const popupHead = document.createElement('div');;
+    const popupHead = document.createElement('div');
     popupHead.className = 'popup-head';
     const header = document.createElement('h2');
     header.className = 'popup-header';
     header.innerText = element.headerCard;
-    const closeCard = document.createElement('a')
+    const closeCard = document.createElement('a');
     closeCard.innerHTML = '&times;';
     closeCard.className = 'close';
     const skills = document.createElement('div');
-    skills.className ='skills'
+    skills.className = 'skills';
     element.badgesCard.forEach((e) => {
       const skill = document.createElement('div');
       skill.className = 'skill';
@@ -134,25 +134,27 @@ function loadCards(cardsData = mockData) {
     projectBody.className = 'project-body';
     const popupImage = document.createElement('div');
     popupImage.className = 'popup-img';
-    popupImage.style.backgroundImage = `Url(${element.imageURL})`
+    popupImage.style.backgroundImage = `Url(${element.imageURL})`;
     const wrap = document.createElement('div');
-    wrap.className = 'wrap'
+    wrap.className = 'wrap';
     const bodyText = document.createElement('p');
     bodyText.innerText = element.textCard;
     const demoButtons = document.createElement('div');
     demoButtons.className = 'demo-buttons';
     const footerLink1 = document.createElement('button');
-    footerLink1.type = 'button'
+    footerLink1.type = 'button';
     footerLink1.innerHTML = '<span>See Live</span> <img src="./icons/live-demo.svg" alt="Live Demo">';
+    footerLink1.addEventListener('click', () => { window.location.replace('https://github.com/ahmedadel56/ahmedadel56.github.io'); });
     const footerLink2 = document.createElement('button');
-    footerLink2.type = 'button'
+    footerLink2.type = 'button';
     footerLink2.innerHTML = '<span>See Source</span> <img src="./icons/github-Vector.svg" alt="Source code on github">';
+    footerLink1.addEventListener('click', () => { window.location.replace('https://github.com/ahmedadel56/ahmedadel56.github.io'); });
     popupHead.appendChild(header);
     popupHead.appendChild(closeCard);
     projectBody.appendChild(popupImage);
     wrap.appendChild(bodyText);
-    demoButtons.appendChild(footerLink1)
-    demoButtons.appendChild(footerLink2)
+    demoButtons.appendChild(footerLink1);
+    demoButtons.appendChild(footerLink2);
     wrap.appendChild(demoButtons);
     projectBody.appendChild(wrap);
     card.appendChild(popupHead);
@@ -162,18 +164,16 @@ function loadCards(cardsData = mockData) {
     document.body.appendChild(card);
   });
 }
-loadCards()
-let project =Array.from(document.querySelectorAll('.card-work1 button,.card-work button'));
-let popup = Array.from(document.querySelectorAll('.popup'));
-project.forEach((elem)=>elem.addEventListener('click',function (){
-  console.log(project.indexOf(elem))
+loadCards();
+const project = Array.from(document.querySelectorAll('.card-work1 button,.card-work button'));
+const popup = Array.from(document.querySelectorAll('.popup'));
+project.forEach((elem) => elem.addEventListener('click', () => {
   popup[project.indexOf(elem)].style.display = 'flex';
   document.body.style.backgroundColor = '#979493';
-}))
+}));
 
-const closeCard = document.querySelectorAll('.close')
-closeCard.forEach((elem)=> elem.addEventListener('click',function (){
-  popup.forEach(elem=>elem.style.display ='none')
+const closeCard = document.querySelectorAll('.close');
+closeCard.forEach((elem) => elem.addEventListener('click', () => {
+  popup.forEach((elem) => { elem.style.display = 'none'; });
   document.body.style.backgroundColor = '#fff';
-}))
-
+}));
