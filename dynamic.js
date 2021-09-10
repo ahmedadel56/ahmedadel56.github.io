@@ -177,3 +177,35 @@ closeCard.forEach((elem) => elem.addEventListener('click', () => {
   popup.forEach((elem) => { elem.style.display = 'none'; });
   document.body.style.backgroundColor = '#fff';
 }));
+
+// Form validation Section
+
+const contactForm = document.getElementById('contact');
+const errorBox = document.querySelector('.errorBox');
+
+function isLowerCase(word) {
+  if (word === word.toLowerCase()) {
+    return true;
+  }
+  return false;
+}
+
+function clearForm() {
+  contactForm.querySelector('#name').value = '';
+  contactForm.querySelector('#mail').value = '';
+  contactForm.querySelector('#msg').value = '';
+}
+
+function validateForm() {
+  if (!isLowerCase(contactForm.querySelector('#mail').value)) {
+    errorBox.className = 'errorBox goVisible';
+  } else {
+    errorBox.className = 'errorBox';
+    contactForm.submit();
+    clearForm();
+  }
+}
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  validateForm();
+});

@@ -847,3 +847,13 @@ form textarea {
     width: 95%;
   }
 }
+
+/* Form error massage */
+.errorBox {
+  visibility: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.goVisible {
+  visibility: visible;
+}
