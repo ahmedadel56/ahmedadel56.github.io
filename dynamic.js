@@ -110,6 +110,18 @@ const mockData = [
   },
 ];
 
+// Preserve data in the browser using local storage
+const inputs = document.querySelectorAll('.preserve');
+let dataStorage = {};
+
+inputs.forEach((element) => {
+  element.addEventListener('input', (e) => {
+    dataStorage[e.target.id] = e.target.value;
+    localStorage.setItem('contactFormStorage', JSON.stringify(dataStorage));
+  });
+});
+// the end of saving data
+
 function loadCards(cardsData = mockData) {
   cardsData.forEach((element) => {
     const card = document.createElement('div');
@@ -164,7 +176,6 @@ function loadCards(cardsData = mockData) {
     document.body.appendChild(card);
   });
 }
-loadCards();
 const project = Array.from(document.querySelectorAll('.card-work1 button,.card-work button'));
 const popup = Array.from(document.querySelectorAll('.popup'));
 project.forEach((elem) => elem.addEventListener('click', () => {
@@ -202,6 +213,8 @@ function validateForm() {
   } else {
     errorBox.className = 'errorBox';
     contactForm.submit();
+    localStorage.removeItem('contactFormStorage');
+    dataStorage = {};
     clearForm();
   }
 }
@@ -209,3 +222,21 @@ contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   validateForm();
 });
+
+window.onload = function () {
+  loadCards();
+
+  if (localStorage.key('contactFormStorage') !== null) {
+    dataStorage = JSON.parse(localStorage.getItem('contactFormStorage'));
+  } else {
+    return null;
+  }
+
+  inputs.forEach((element) => {
+    const currentElement = JSON.parse(localStorage.getItem('contactFormStorage'))[element.id];
+    if (currentElement !== undefined) {
+      element.value = currentElement;
+    }
+  });
+  return null;
+};
