@@ -16,12 +16,17 @@ This project Is for setting Portfolio website to include all info about me and m
 * CSS
 
 # Live Demo
-* https://ahmedadel56.github.io/
+
+*  you can checkout website [here](https://ahmedadel56.github.io/portfilio-site/)
+
 # Prerequisites
 Just Google Chrome
 
 # Author
-* GitHub: https://github.com/ahmedadel56
+👤 **Ahmed Adel**
+
+* LinkedIn: [LinkedIn](https://www.linkedin.com/in/ahmed-adel56/)
+* GitHub: [@githubhandle](https://github.com/ahmedadel56)
 
 # Contributing
 Contributions, issues, and feature requests are welcome!
@@ -29,12 +34,13 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the issues page.
 
 # Show your support
-Give a star if you like this project!
+Give a ⭐️ if you like this project!
 
 # Acknowledgments
 * Hat tip to anyone who's code was used
 * Inspiration
 * etc
 
-# License
-This Project is https://github.com/ahmedadel56 licensed 
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
