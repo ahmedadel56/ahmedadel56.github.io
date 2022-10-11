@@ -9,7 +9,7 @@
 prepare portfolio website
 # Additional description about the project and its features.
 
-This project Is for setting Portfolio website to include all info about me and my previos projects
+This project Is for setting up a Portfolio website to include all info about me and my previous projects.
 
 # Built With
 * HTML
